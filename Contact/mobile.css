@@ -1,0 +1,150 @@
+@media screen and (max-width : 400px){
+    .main {
+        position: relative;
+        font-family: Mukta, sans-serif;
+        width: 355px;
+        /* border: 2px solid #FFFFFF; */
+     }
+    .main .main-wrap {
+        position: relative;
+        margin: 10px 0 0 15px;
+        display: block;
+        width: 320px;
+        height: 1410px;
+        /* border: 2px solid red; */
+    }
+    .main .main-wrap .profile-box {
+        position: relative;
+        top: 80px;
+        left: 7px;
+        height: 600px;
+        /* border: 2px solid #FFFFFF; */
+    }
+    .profile-box .profile-content {
+        position: absolute;
+        margin-top: 10px;
+    }
+    .profile-box #name {
+        margin: 140px 0 0 95px;
+        font-size: 30px;
+    }
+    .profile-box #role {
+        margin: 15px 0 0 84px;
+        font-size: 22px;
+        width: 120px;
+    }
+    .social-media {
+        margin: 30px 0 10px 65px;
+        text-decoration: none;
+    }
+    .social-media .fa-facebook, .fa-telegram, .fa-instagram, .fa-twitter {
+        font-size: 22px;
+        margin-right: 30px;
+    }
+    .profile-box .icons {
+        font-size: 18px;
+        margin: 25px 0 0 40px;
+        letter-spacing: .8px;
+    }
+    .profile-box .fa-calendar-day, .fa-location-dot, .fa-envelope {
+        margin-right: 30px;
+    }
+    .profile-box p:nth-of-type(3) {
+        margin-top: 30px;
+    }
+    .main-wrap .contact-box {
+        top: 100px;
+        left: -1px;
+        width: 335px;
+        height: 670px;
+        /* border: 2px solid yellow; */
+    }
+
+    /* .contact-content-wrap {
+        position: relative;
+        top: 190px;
+    } */
+    /* !!!!!!!!!!!!!!!!!!!!!!**************************************!!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .set-color-white {
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+        height: 27px;
+        width: 65px;
+    }
+
+    .contact-box .navigation {
+        user-select: none;
+        visibility: hidden;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #0D86FF;
+        color: #DEDDE0;
+        width: 0;
+        height: 60px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 20px;
+        z-index: 1;
+        overflow: hidden;
+        transition: .8s;
+    }
+
+    /* !!!!!!!!!!!!!!!!!!!!!!**************************************!!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .contact-content-wrap {
+        top: 20px;
+        position: relative;
+        transition: .5s;
+    }
+
+    .contact-form #text-message {
+        font-family: Fredoka;
+        padding: 15px;
+        margin: 40px 0 0 12px;
+        font-size: 20px;
+        background: #272333;
+        color: #DEDDE0;
+        width: 280px;
+        height: 230px;
+        border: 1px solid #272333;
+        letter-spacing: .5px;
+        border-radius: 10px;
+        overflow: auto;
+        outline: none;
+        resize: none;
+    }
+
+    .contact-form #label1 {
+        margin-left: -75px;
+    }
+
+    .contact-form #full-name {
+        padding-left: 45px;
+        margin: 15px 0 0 58px;
+        width: 265px;
+    }
+    .contact-form #label2 {
+        display: flex;
+        margin-left: -75px;
+    }
+    .contact-form #label2 img {
+        top: 46px;
+    }
+    .contact-form #email {
+        margin: 30px 0 0 62px;
+        width: 265px;
+    }
+    .contact-form #request-btn {
+        display: flex;
+        margin: 40px 0 20px 45px;
+        background: #0D86FF;
+        color: #DEDDE0;
+        width: 250px;
+        height: 60px;
+        -webkit-tap-highlight-color: transparent;
+    }
+}

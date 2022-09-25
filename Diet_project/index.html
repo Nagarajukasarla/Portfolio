@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <p>Growth</p>
+    </div>
+    <div class="head">
+        <p>a linux based command line application for body growth</p>
+    </div>
+    <div class="intro">
+        <p>
+            In order to build muscle or to have a perfect diet for living a beautiful life an application is needed which keeps the backup of all necessary activities like taking food, doing workouts on particular timings to burn calories.
+
+            GROWTH application will take care of all your needs. This program has  an authorized feature so one person's data is not visible to another person.
+            
+            It is a command line interface application even the user interface is quite simple to understand and operate. When a user enters data into an application everything is stored in a particular file so it is easy access from internal storage.
+            
+            C++ language is used as a base language in this application so execution is very fast and secure (because of OOP). MYSQL database is used for storing each user's details.
+        </p>
+    </div>
+    <div class="table">
+        <p>TABLE OF CONTENTS</p>
+        <ol class="list">
+            <li>Starting mariadb mysql server</li>
+            <li>Running the application</li>
+            <li>Accessing the application</li>
+            <ol class="sub-list">
+                <li>Sign up</li>
+                <li>Login</li>
+            </ol>
+            <li>Creation of Activities</li>
+            <li>Accessing Existing activities</li>
+            <li>Closing the application</li>
+        </ol>
+    </div>
+    <div class="main-content">
+       <div class="start-server">
+            <p id="head-txt">STARTING MARIADB MYSQL SERVER</p>
+            <p>Using <i>service mariadb start</i> command database server is started</p>
+            <img src="Img/start.png">
+       </div>
+       <div class="run">
+            <p id="head-txt">RUNNING THE APPLICATION</p>
+            <p>Here you have to link the library "mysql" so check the respective path in /usr/include/ directory of your system</p>
+            <p>clang++ main.cpp -L/../../usr/include/mariadb/mysql -lmysqlclient -o a && ./a</p>
+            <img src="Img/running.png" alt="">
+            <p>After running the application this is the first look.</p>
+            <img src="Img/running1.png" alt="">
+       </div>
+       <div class="access">
+            <p id="head-txt">ACCESSING THE APPLICATION</p>
+            <p>
+                After running the application initially it shows login and signup options to continue the process. If the user is new he/she can go with sign up option.
+            </p>
+            <div class="signup">
+                <p>Signup</p>
+                <img src="Img/signup.png" alt="">
+            </div>
+            <div class="login">
+                <p>Login</p>
+                <img src="Img/login.png" alt="">
+                <p>After succesful login welcome back message is prompted</p>
+                <img src="Img/login1.png" alt="">
+            </div>
+       </div>
+       <div class="creation">
+           <p>Now you can create a your files.</p>
+           <p>Select 2 for creation. After selecting you will be asked to select in which category you want to create your file and you have to give the file name.</p>
+           <img src="Img/creation.png" alt="">
+           <p></p>
+       </div>
+       <div class="accessing">
+           <p>In order to open your files</p>
+           <p>Select 1 to open your Existing files then select category your existing files will be prompted</p>
+           <img src="Img/open.png" alt="">
+       </div>
+       <div class="close">
+           <p>Closing is simple, just choose 3rd option on every prompt</p>
+       </div>
+    </div>
+</body>
+</html>

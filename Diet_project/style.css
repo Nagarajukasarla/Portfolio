@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #272333;
+    margin-bottom: 40px;
+}
+body .header {
+    background: #55555a;
+    height: 50px;
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 2px 16px #e9e8e8;
+}
+body .header p {
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    user-select: none;
+    letter-spacing: .5px;
+}
+body .head {
+    margin-top: 65px;
+    text-align: center;
+}
+.head p {
+    color: #DEDDE0;
+    font-family: Titillium, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.head p::selection {
+    background-color: transparent;
+    color: #0D86FF;
+}
+body .intro {
+    margin: 60px 30px 0 30px;
+    
+}
+body .intro p {
+    font-size: 20px;
+    color: #DEDDE0;
+    font-family: Titillium, sans-serif;
+    line-height: 30px;
+}
+body .intro p::selection {
+    background-color: transparent;
+    color: #0D86FF;
+}
+body .table {
+    font-family: Ubuntu, sans-serif;
+    line-height: 35px;
+    font-size: 18px;
+    color: #DEDDE0;
+    margin-left: 100px;
+    margin-top: 70px;
+    letter-spacing: .8px;
+}
+body .table p {
+    margin-left: -20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+body .table p::selection {
+    background-color: transparent;
+    color: #0D86FF;
+}
+.table .list .sub-list {
+    margin-left: 30px;
+}
+body .table li::selection {
+    background-color: transparent;
+    color: #0D86FF;
+}
+body .main-content {
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    margin: 100px 40px 0 40px;
+    color: #DEDDE0;
+}
+.main-content .start-server #head-txt {
+    font-size: 22px;
+    letter-spacing: .6px;
+}
+.main-content .start-server p:nth-of-type(2) {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.main-content .start-server p:nth-of-type(2) i {
+    font-weight: 500;
+}
+.main-content .start-server img {
+    margin-top: 20px;
+    width: 750px;
+    height: 250px;
+}
+.main-content .run #head-txt {
+    margin-top: 40px;
+    font-size: 22px;
+    letter-spacing: .6px;
+}
+.main-content .run p:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.main-content .run p:nth-of-type(3) {
+    letter-spacing: .8px;
+}
+.main-content .run p:nth-of-type(4) {
+    letter-spacing: .8px;
+    margin: 20px 0 20px 0;
+}
+.main-content .run img {
+    margin-top: 20px;
+    width: 750px;
+    height: 400px;
+}
+.main-content .access {
+    margin-top: 40px;
+}
+.main-content .access #head-txt {
+    margin-bottom: 20px;
+}
+.main-content .access .signup img {
+    margin-top: 20px;
+    width: 780px;
+    height: 500px;
+}
+.main-content .access .signup p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.main-content .access .login {
+    margin-top: 40px;
+}
+.main-content .access .login p:nth-of-type(1) {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.main-content .access .login img {
+    width: 650px;
+    height: 420px;
+}
+.main-content .access .login p:nth-of-type(2) {
+    margin: 20px 0 20px 0;
+}
+.main-content .creation {
+    margin-top: 40px;
+    font-size: 18px;
+}
+.main-content .creation p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+.main-content .creation p:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+.main-content .creation img {
+    width: 650px;
+    height: 420px;
+}
+.main-content .accessing {
+    margin: 40px 0 20px 0;
+}
+.main-content .accessing img {
+    width: 650px;
+    height: 420px;
+}
+.main-content .accessing p:nth-of-type(1), p:nth-of-type(2) {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.main-content .close {
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: .8px;
+}

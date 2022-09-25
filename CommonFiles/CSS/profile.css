@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Mukta:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    background: #272333;
+    background-image: url(../Img/triangles-top.svg), url(../Img/triangles-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    opacity: 1;
+    z-index: -1;
+}
+.main {
+   position: relative;
+   /* border: 2px solid #FFFFFF; */
+   font-family: Mukta, sans-serif;
+}
+.main .main-wrap {
+    position: relative;
+    margin: 100px 80px 0 80px;
+    /* border: 2px solid #FFFFFF; */
+    display: flex;
+}
+.profile-box {
+    /* position: sticky;
+    top: 20px; */
+    position: fixed;
+    width: 310px;
+    height: 550px;
+    background-color: #302C40;
+    /* border: 1px solid #FFFFFF; */
+    border-radius: 20px;
+    color: #DEDDE0;
+    bottom: 20px;
+}
+.profile-box #img {
+    user-select: none;
+    position: absolute;
+    top: -60px;
+    width: 180px;
+    margin-left: 70px;
+    border-radius: 40px;
+}
+.profile-box #name {
+    margin: 140px 0 0 105px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+.profile-box #name::selection {
+    background-color: #302C40;
+    color: #0D86FF;
+}
+.profile-box #role {
+    margin: 10px 0 0 93px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    background: #272333;
+    width: 100px;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+#role::selection {
+    background-color: #272333;
+    color: #0D86FF;
+}
+.social-media {
+    margin: 20px 0 10px 80px;
+    text-decoration: none;
+}
+.social-media a, a:visited, a:hover, a:active {
+    color: inherit; /* apply parent div properties*/
+    -webkit-tap-highlight-color: transparent;
+}
+.social-media::selection {
+    background-color: #302C40;
+    color: #0D86FF;
+}
+.social-media .fa-facebook, .fa-telegram, .fa-instagram, .fa-twitter {
+    margin-right: 5px;
+    font-size: 18px;
+    margin-right: 25px;
+}
+.profile-box .icons {
+    font-size: 15px;
+    margin: 25px 0 0 40px;
+    letter-spacing: .8px;
+}
+.profile-box .icons::selection {
+    background-color: #302C40;
+    color: #0D86FF;
+}
+.profile-box .fa-calendar-day, .fa-location-dot, .fa-envelope {
+    margin-right: 25px;
+}
+.profile-box .download-btn button{
+    background: #0D86FF;
+    width: 200px;
+    margin: 40px 0 0 55px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Fredoka, sans-serif;
+    font-weight: 400;
+    color: #DEDDE0;
+    display: flex;
+    border-radius: 20px;
+    letter-spacing: .5px;
+    box-shadow: 0 0.25rem 2rem rgba(13, 134, 255, 0.25), 0 0.25rem 1rem rgba(13, 134, 255, 0.25);
+    -webkit-tap-highlight-color: transparent;
+}
+.profile-box .download-btn button:hover {
+    box-shadow: none;
+    transition: .3s ease-in-out;
+}
+.profile-box .download-btn button img {
+    width: 30px;
+    height: 30px;
+    margin: -2px 8px 0 3px ;
+}

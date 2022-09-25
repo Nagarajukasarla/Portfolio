@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito+Sans:wght@300;400;600&family=Pacifico&family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("Img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid yellow; */
+}
+.header {
+    user-select: none;
+    display: flex;
+    padding-top: 28px;
+    width: 100vw;
+    height: 100px;
+    /* border: 1px solid #FFFFFF; */
+    color: #FFFFFF;
+}
+.head-txt {
+    margin-left: 40px;
+    width: 300px;
+    display: flex;
+    font-size: 20px;
+    /* border: 1px solid #FFFFFF; */
+}
+.head-txt p:nth-of-type(1) {
+    font-size: 32px;
+    font-family: "Great Vibes";
+    font-weight: 900;
+}
+.head-txt p:nth-of-type(2) {
+    margin-top: -4px;
+    margin-left: 6px;
+    font-size: 38px;
+    font-family: "Great Vibes";
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.head-txt p:nth-of-type(3) {
+    margin-top: 40px;
+    margin-left: -120px;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+#navigations {
+    margin-top: 10px;
+    position: absolute;
+    width: 320px;
+    right: 10px;
+    /* border: 1px solid #FFFFFF; */
+}
+#menu {
+    display: none;
+}
+#navigations ul {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+#navigations ul li {
+    padding: 12px;
+    width: 90px;
+    font-size: 18px;
+    margin-right: 15px;
+    font-family: "Raleway";
+    letter-spacing: .8px;
+    cursor: pointer;
+    color: rgba(225,225,225,0.86);
+}
+#navigations ul li:hover {
+    color: rgba(225,225,225,1);
+    border-bottom: 1.8px solid #a11f1f;
+}
+.main {
+    margin: 130px 0 0 150px;
+    /* border: 1px solid #FFFFFF; */
+    width: 1000px;
+    height: 400px;
+    color: #FFFFFF;
+}
+.main .main-txt {
+    margin: 100px 0 0 110px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.main .main-txt::selection {
+    background: transparent;
+    color: #0D86FF;
+}
+.main .main-sub-txt {
+    margin: 20px 0 0 115px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: .6px;
+}
+.main .main-sub-txt p::selection {
+    background: transparent;
+    color: #0D86FF;
+}
+button::selection {
+    user-select: none;
+}
+.main .site {
+    margin: 40px 0 0 115px;
+    width: 200px;
+    padding: 10px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    background: transparent;
+    color: #FFFFFF;
+    outline: none;
+    border: 1px solid #a11f1f;
+    cursor: pointer;
+    box-shadow: 0 0.01rem .5rem #a11f1f, 0 0.15rem .5rem #a11f1f;
+}
+.main .site:active {
+    cursor: pointer;
+    background: #a11f1f;
+    transition: .4s;
+}
+.main .hire {
+    margin: 40px 0 0 15px;
+    width: 200px;
+    padding: 10px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    background: #a11f1f;
+    color: #FFFFFF;
+    outline: none;
+    border: 1px solid #a11f1f;
+    cursor: pointer;
+    box-shadow: 0 0.01rem .5rem #a11f1f, 0 0.15rem .5rem #a11f1f;
+}
+.main .hire:active {
+    cursor: pointer;
+    background: transparent;
+    transition: .4s;
+}
