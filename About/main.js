@@ -4,7 +4,7 @@ let navigations = document.querySelector('.navigation');
 let navButton = document.querySelector('.nav-btn');
 let navAboutEl = document.querySelector('.navigation #about-el');
 let aboutContentWrapper = document.querySelector('.about-content-wrap');
-
+let userIntro = document.querySelector('.about-container #user-intro');
 
 // navButton.addEventListener('click', function() {
 //     if (navBurger.classList.contains('active')) {
@@ -24,6 +24,21 @@ let aboutContentWrapper = document.querySelector('.about-content-wrap');
 //         navigations.classList.add('set-width-zero');
 //     }
 // });
+
+
+let userIntroData = "";
+
+$(document).ready(function() {
+    $.get('../fileLoader.php', function(data) {
+        var fileContents = JSON.parse(data);
+        //$('#file-contents').text(fileContents);
+        console.log(fileContents);
+        userIntroData = fileContents.contents;
+	userIntro.textContent = userIntroData;
+    });
+});
+
+//userIntro.textContent = userIntroData;
 
 let deviceWidth = window.innerWidth;
 let navBarStatus = true;
