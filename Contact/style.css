@@ -67,14 +67,6 @@
     transition: .8s;
 }
 
-/* Js manipulaiton  */
-/* White color is applied for active navigation page  */
-.set-color-white {
-    color: #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
-    height: 27px;
-}
-/* Js manipulaiton */
 
 .contact-box .navigation a {
     text-decoration: none;
@@ -85,6 +77,7 @@
     padding: 2px;
     font-size: 18px;
     height: 27px;
+    color: #d9d8db;
 }
 .contact-box .navigation p:hover {
     cursor: pointer;
@@ -192,3 +185,12 @@ button img {
     height: 30px;
 }
 /* ************************************************************************ */
+
+/* Js manipulaiton  */
+/* White color is applied for active navigation page  */
+.set-color-white {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    height: 27px;
+}
+/* Js manipulaiton */
