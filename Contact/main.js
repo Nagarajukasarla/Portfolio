@@ -1,16 +1,20 @@
-let navBurger = document.querySelector('.nav-btn .fa-bars-staggered');
-let navCross = document.querySelector('.nav-btn .fa-xmark');
-let navigations = document.querySelector('.navigation');
-let navButton = document.querySelector('.nav-btn');
-let navContactEl = document.querySelector('.navigation #contact-el');
-let contactBoxEl = document.querySelector('.contact-box');
-let mainWrapEl = document.querySelector('.main-wrap');
-let contactContentWrapper = document.querySelector('.contact-content-wrap');
+let navBurger = document.querySelector(".nav-btn .fa-bars-staggered");
+let navCross = document.querySelector(".nav-btn .fa-xmark");
+let navigations = document.querySelector(".navigation");
+let navButton = document.querySelector(".nav-btn");
+let navContactEl = document.querySelector(".navigation #contact-el");
+let contactBoxEl = document.querySelector(".contact-box");
+let mainWrapEl = document.querySelector(".main-wrap");
+let contactContentWrapper = document.querySelector(".contact-content-wrap");
+let textMessage = document.querySelector("#text-message");
+let fullName = document.querySelector("#full-name");
+let email = document.querySelector("#email");
+let requestBtn = document.querySelector("#request-btn");
 
 let deviceWidth = window.innerWidth;
 let navBarStatus = true;
 let navBarStatusMobile = true;
-navButton.addEventListener('click', function() {
+navButton.addEventListener("click", function () {
     if (deviceWidth < 400) {
         if (navBarStatusMobile == true) {
             navBurger.style.visibility = "hidden";
@@ -24,8 +28,7 @@ navButton.addEventListener('click', function() {
             mainWrapEl.style.height = "1610px";
             contactBoxEl.style.height = "860px";
             navBarStatusMobile = false;
-        }
-        else {
+        } else {
             navBurger.style.visibility = "visible";
             navBurger.style.opacity = "1";
             navCross.style.visibility = "hidden";
@@ -38,8 +41,7 @@ navButton.addEventListener('click', function() {
             contactBoxEl.style.height = "670px";
             navBarStatusMobile = true;
         }
-    }
-    else {
+    } else {
         if (navBarStatus == true) {
             navBurger.style.visibility = "hidden";
             navBurger.style.opacity = "0";
@@ -48,8 +50,7 @@ navButton.addEventListener('click', function() {
             navigations.style.width = "500px";
             navigations.style.visibility = "visible";
             navBarStatus = false;
-        }
-        else {
+        } else {
             navBurger.style.visibility = "visible";
             navBurger.style.opacity = "1";
             navCross.style.visibility = "hidden";
@@ -59,9 +60,34 @@ navButton.addEventListener('click', function() {
             navBarStatus = true;
         }
     }
-    
 });
 
-if (!(document.hidden)) {
-    navContactEl.classList.add('set-color-white');
+if (!document.hidden) {
+    navContactEl.classList.add("set-color-white");
+}
+
+requestBtn.addEventListener("click", function () {
+    sendMailTo(email.value, {
+        subject: fullName.value + " is Requesting Access",
+        body: textMessage.value,
+    });
+});
+
+function sendMailTo(toEmail, { subject, body }) {
+    let email = toEmail;
+
+    if (subject !== null) {
+        email += "?subject=" + encodeURIComponent(subject);
+    }
+
+    if (body !== null) {
+        if (subject === null) {
+            email += "?";
+        } else {
+            email += "&";
+        }
+        email += "body=" + encodeURIComponent(body);
+    }
+
+    window.location.href = "mailto:" + email;
 }
