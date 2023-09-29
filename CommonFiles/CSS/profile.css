@@ -52,12 +52,12 @@ body {
     color: #0D86FF;
 }
 .profile-box #role {
-    margin: 10px 0 0 93px;
+    margin: 10px 0 0 87px;
     font-size: 18px;
     letter-spacing: 0.7px;
     background: #272333;
-    width: 100px;
-    padding-left: 20px;
+    width: 132px;
+    padding-left: 10px;
     border-radius: 50px;
 }
 #role::selection {

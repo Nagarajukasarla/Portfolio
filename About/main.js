@@ -34,7 +34,7 @@ $(document).ready(function() {
         //$('#file-contents').text(fileContents);
         console.log(fileContents);
         userIntroData = fileContents.contents;
-	userIntro.textContent = userIntroData;
+	    userIntro.textContent = userIntroData;
     });
 });
 
