@@ -10,93 +10,137 @@ body {
     opacity: 1;
     z-index: -1;
 }
+
 .main {
-   position: relative;
-   /* border: 2px solid #FFFFFF; */
-   font-family: Mukta, sans-serif;
-}
-.main .main-wrap {
     position: relative;
-    margin: 100px 80px 0 80px;
-    /* border: 2px solid #FFFFFF; */
-    display: flex;
+    font-family: Mukta, sans-serif;
+    width: 100%;
+    height: 100%;
 }
+
+.main .main-wrap {
+    /* padding: 70px 80px; */
+    position: relative;
+    margin: 100px 0 0 80px;
+    display: grid; 
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 40px;
+    /* justify-content: center; */
+}
+
 .profile-box {
-    /* position: sticky;
-    top: 20px; */
     position: fixed;
     width: 310px;
     height: 550px;
     background-color: #302C40;
-    /* border: 1px solid #FFFFFF; */
     border-radius: 20px;
     color: #DEDDE0;
-    bottom: 20px;
+    /* bottom: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .profile-box #img {
     user-select: none;
     position: absolute;
     top: -60px;
     width: 180px;
-    margin-left: 70px;
     border-radius: 40px;
 }
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .profile-box #name {
-    margin: 140px 0 0 105px;
+    position: absolute;
+    top: 110px;
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 0.7px;
+    margin-bottom: 20px;
 }
+
 .profile-box #name::selection {
     background-color: #302C40;
     color: #0D86FF;
 }
+
 .profile-box #role {
-    margin: 10px 0 0 87px;
-    font-size: 18px;
+    margin-top: 140px;
+    font-size: 17.5px;
     letter-spacing: 0.7px;
     background: #272333;
-    width: 132px;
-    padding-left: 10px;
+    padding: 1px 12px;
     border-radius: 50px;
 }
+
 #role::selection {
     background-color: #272333;
     color: #0D86FF;
 }
+
 .social-media {
-    margin: 20px 0 10px 80px;
+    margin: 10px 0 5px 0;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-decoration: none;
+    margin-bottom: 10px;
 }
-.social-media a, a:visited, a:hover, a:active {
-    color: inherit; /* apply parent div properties*/
+
+.social-media a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
     -webkit-tap-highlight-color: transparent;
 }
+
 .social-media::selection {
     background-color: #302C40;
     color: #0D86FF;
 }
-.social-media .fa-facebook, .fa-telegram, .fa-instagram, .fa-twitter {
-    margin-right: 5px;
+
+.social-media .fa-facebook,
+.fa-telegram,
+.fa-linkedin-in,
+.fa-twitter {
     font-size: 18px;
-    margin-right: 25px;
 }
+
 .profile-box .icons {
+    padding-left: 50px;
+    width: 250px;
     font-size: 15px;
-    margin: 25px 0 0 40px;
     letter-spacing: .8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
+
 .profile-box .icons::selection {
     background-color: #302C40;
     color: #0D86FF;
 }
-.profile-box .fa-calendar-day, .fa-location-dot, .fa-envelope {
+
+.profile-box .fa-calendar-day,
+.fa-location-dot,
+.fa-envelope {
     margin-right: 25px;
 }
-.profile-box .download-btn button{
+
+.profile-box .download-btn button {
+    margin-top: 15px;
     background: #0D86FF;
     width: 200px;
-    margin: 40px 0 0 55px;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -107,15 +151,18 @@ body {
     display: flex;
     border-radius: 20px;
     letter-spacing: .5px;
-    box-shadow: 0 0.25rem 2rem rgba(13, 134, 255, 0.25), 0 0.25rem 1rem rgba(13, 134, 255, 0.25);
+    box-shadow: 0 -0.25rem 2rem rgba(13, 134, 255, 0.20), 0 0.25rem 2rem rgba(13, 134, 255, 0.20);
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
+
 .profile-box .download-btn button:hover {
-    box-shadow: none;
+    box-shadow: 0 -0.25rem 2rem rgba(13, 134, 255, 0.32), 0 0.25rem 2rem rgba(13, 134, 255, 0.32);
     transition: .3s ease-in-out;
 }
+
 .profile-box .download-btn button img {
     width: 30px;
     height: 30px;
-    margin: -2px 8px 0 3px ;
+    margin: -2px 8px 0 3px;
 }
