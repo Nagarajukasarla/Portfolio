@@ -138,13 +138,13 @@ a:active {
     /* border: 1px solid #FFFFFF; */
 }
 
-.education-container1, .education-container2 {
+.education-container1 {
     margin-left: 20px;
     /* padding-top: -60px; */
     border-left: 4px solid #0D86FF;
 }
 
-.education-container3 {
+.education-container2 {
     margin-left: 20px;
 }
 
@@ -154,10 +154,14 @@ a:active {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-top: -2px;
+    margin-top: 0;
     margin-left: -12.5px;
     border: 1px solid #0D86FF;
     background-color: #0D86FF;
+}
+
+.education-container2::before {
+    margin-left: -8.5px;
 }
 
 .education-container3::before {
@@ -176,17 +180,6 @@ a:active {
     position: absolute;
     width: 2.5px;
     height: 20px;
-    margin-top: -18px;
-    margin-left: -4px;
-    border: 1px solid #0D86FF;
-    background-color: #0D86FF;
-}
-
-.education-container2::after {
-    content: '';
-    position: absolute;
-    width: 2.5px;
-    height: 24px;
     margin-top: -18px;
     margin-left: -4px;
     border: 1px solid #0D86FF;
